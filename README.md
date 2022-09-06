@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple steps.
 - **Open folder in VSC**
 
 ```sh
-   code .
+  code .
 ```
 
 ### Launches the test runner
