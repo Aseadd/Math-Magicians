@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.nav-bar {
+  background: #004346;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
