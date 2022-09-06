@@ -17,25 +17,39 @@ To get a local copy up and running follow these simple steps.
 - Open the terminal on your computer
 - Navigate through directories using [change directory (cd)](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10) command to where you want to clone the repository.
 - Type the following command then press ENTER:
-  - git clone https://github.com/Aseadd/math-magicians.git
+
+```sh
+  git clone https://github.com/Aseadd_/math-magicians.git
+```
+
 - The terminal will send to you information about your download.
 - Type the following command then press ENTER:
-  - cd Math-Magicians
+  ```sh
+  cd math-magicians
+  ```
 - **Type the following lists of commands and press ENTER after each command:**
   - _Basic Setup_
-    - npm start
+    ```sh
+    npm start
+    ```
+  ````
   - **Open folder in VSC**
-    - code .
+    ```sh
+     code .
+     ```
+  ````
 
-### `npm test`
+### Launches the test runner
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+  npm test
+```
 
-### `npm run build`
+### To build the app for production
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+  npm run build
+```
 
 ## Built With
 
