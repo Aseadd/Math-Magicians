@@ -44,10 +44,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 - **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
 - **React:** JavaScript library.
 
-## 🎥 Video explaining the features of this project
-
-- [Loom Video]()
-
 ## 🌎 Live Demo:
 
 - [math magician]()
