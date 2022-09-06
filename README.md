@@ -24,20 +24,23 @@ To get a local copy up and running follow these simple steps.
 
 - The terminal will send to you information about your download.
 - Type the following command then press ENTER:
-  ```sh
+
+```sh
   cd math-magicians
-  ```
+```
+
 - **Type the following lists of commands and press ENTER after each command:**
   - _Basic Setup_
-    ```sh
-    npm start
-    ```
-  ````
-  - **Open folder in VSC**
-    ```sh
-     code .
-     ```
-  ````
+
+```sh
+  npm start
+```
+
+- **Open folder in VSC**
+
+```sh
+   code .
+```
 
 ### Launches the test runner
 
