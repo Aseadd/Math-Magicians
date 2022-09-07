@@ -24,9 +24,18 @@
   border: 1px solid #0892a5;
 }
 
-.grid-container > div {
+.grid-container > button {
   padding: 20px 0;
   font-size: 28px;
+}
+
+button {
+  height: 10vh;
+  border: 1px solid gray;
+}
+
+button:hover {
+  background-color: #88D498;
 }
 
 .item1 {
