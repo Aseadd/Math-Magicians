@@ -6,11 +6,13 @@ class Calculator extends React.Component {
   render() {
     return (
       <div className="grid-container">
-        <div className="item1">0</div>
+        <div className="item1">
+          <p className="result">0</p>
+        </div>
         <div className="item">AC</div>
         <div className="item">+/-</div>
         <div className="item">%</div>
-        <div className="item2">/</div>
+        <div className="item2">÷</div>
         <div className="item">7</div>
         <div className="item">8</div>
         <div className="item">9</div>
