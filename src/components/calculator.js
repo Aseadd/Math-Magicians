@@ -24,7 +24,6 @@ const btns = [
   { value: '=', className: 'item2' },
 ];
 
-// eslint-disable-next-line react/prefer-stateless-function
 const Calculator = () => {
   const [items, setItems] = useState(0);
 
