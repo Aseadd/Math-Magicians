@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import calculate from '../logic/calculate';
 
@@ -25,43 +25,39 @@ const btns = [
 ];
 
 // eslint-disable-next-line react/prefer-stateless-function
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Calculator = () => {
+  const [items, setItems] = useState(0);
 
-  onClickHandler = (event) => {
-    this.setState((prevState) => calculate(prevState, event.target.value));
+  const onClickHandler = (event) => {
+    setItems((prevState) => calculate(prevState, event.target.value));
   };
 
-  formatOutput = () => {
-    const { total, next, operation } = this.state;
+  const formatOutput = () => {
+    const { total, next, operation } = items;
     const display = (total || '') + (operation || '') + (next || '');
 
     return display || '0';
   };
 
-  render() {
-    return (
-      <div className="grid-container">
-        <div className="item1">
-          <p className="result">{this.formatOutput()}</p>
-        </div>
-
-        {btns.map(({ value, className }) => (
-          <button
-            type="button"
-            className={className}
-            value={value}
-            key={value}
-            onClick={this.onClickHandler}
-          >
-            {value}
-          </button>
-        ))}
+  return (
+    <div className="grid-container">
+      <div className="item1">
+        <p className="result">{formatOutput()}</p>
       </div>
-    );
-  }
-}
+
+      {btns.map(({ value, className }) => (
+        <button
+          type="button"
+          className={className}
+          value={value}
+          key={value}
+          onClick={onClickHandler}
+        >
+          {value}
+        </button>
+      ))}
+    </div>
+  );
+};
+
 export default Calculator;
