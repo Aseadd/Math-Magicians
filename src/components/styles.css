@@ -13,19 +13,32 @@
   font-size: 20px;
 }
 
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 2px;
-  width: 80%;
+  width: 60%;
   background-color: #f0f7ee;
   padding: 2px;
   margin: auto;
   border: 1px solid #0892a5;
+  border-radius: 25px;
 }
 
 button {
-  height: 12vh;
+  height: 10vh;
   border: 1px solid gray;
 }
 
@@ -40,6 +53,7 @@ button {
   text-align: right;
   background-color: #8d99ae;
   color: #fff;
+  border-radius: 10px;
 }
 
 .item1:hover {
@@ -60,7 +74,7 @@ button {
   font-size: 48px;
 }
 
-.item {
+.item { 
   background-color: #ebebd3;
   text-align: center;
 }
