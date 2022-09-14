@@ -39,23 +39,28 @@ const Calculator = () => {
   };
 
   return (
-    <div className="grid-container">
-      <div className="item1">
-        <p className="result">{formatOutput()}</p>
-      </div>
+    <section className="calc">
+      <span>Lets do some Math</span>
+      <div className="container">
+        <div className="grid-container">
+          <div className="item1">
+            <p className="result">{formatOutput()}</p>
+          </div>
 
-      {btns.map(({ value, className }) => (
-        <button
-          type="button"
-          className={className}
-          value={value}
-          key={value}
-          onClick={onClickHandler}
-        >
-          {value}
-        </button>
-      ))}
-    </div>
+          {btns.map(({ value, className }) => (
+            <button
+              type="button"
+              className={className}
+              value={value}
+              key={value}
+              onClick={onClickHandler}
+            >
+              {value}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
