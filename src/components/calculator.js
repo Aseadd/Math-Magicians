@@ -44,7 +44,7 @@ const Calculator = () => {
       <div className="container">
         <div className="grid-container">
           <div className="item1">
-            <p className="result">{formatOutput()}</p>
+            <p data-testid="display" className="result">{formatOutput()}</p>
           </div>
 
           {btns.map(({ value, className }) => (

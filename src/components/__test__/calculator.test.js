@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Calculator from '../calculator';
-
-it('should render the calculator component', () => {
-  const wrapper = ReactDOM.createRoot(document.createElement('div'));
-  wrapper.render(<Calculator />);
-});
 
 it('should match the snapshot', () => {
   const tree = renderer.create(<Calculator />).toJSON();
@@ -26,4 +21,17 @@ it('Renders user event correctly and display AC', () => {
   fireEvent.click(screen.getByRole('button', { name: 'AC' }));
   const result = screen.getByRole('button', { name: 'AC' });
   expect(result.innerHTML).toBe('AC');
+});
+
+// Simulate user interaction test
+test('User event on Rack Dom', () => {
+  render(<Calculator />);
+  userEvent.click(screen.getByText('1'));
+  userEvent.click(screen.getByText('2'));
+  userEvent.click(screen.getByText('+'));
+  userEvent.click(screen.getByText('3'));
+  userEvent.click(screen.getByText('='));
+  // 12 + 3 = 15  <- on display
+  const result = screen.getByTestId('display');
+  expect(result.innerHTML).toBe('15');
 });

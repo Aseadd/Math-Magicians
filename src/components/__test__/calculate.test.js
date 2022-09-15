@@ -37,3 +37,31 @@ it('should return -7 when 7+/-', () => {
   const result = btns4.reduce((acc, btn) => calculate(acc, btn.value), {});
   expect(result.next).toBe('-7');
 });
+
+describe('Calculate File', () => {
+  it('Testing AC', () => {
+    const obj = '';
+    const buttonName = 'AC';
+
+    expect(calculate(obj, buttonName)).toEqual({
+      total: null,
+      next: null,
+      operation: null,
+    });
+  });
+
+  it('Testing obj.net & buttonName are 0', () => {
+    const obj = { total: '', next: '0', operation: '' };
+    const buttonName = '0';
+    expect(calculate(obj, buttonName)).toEqual({});
+  });
+
+  it('Any "if" is true', () => {
+    const obj = '0';
+    const buttonName = '123';
+    expect(calculate(obj, buttonName)).toEqual({
+      next: buttonName,
+      total: null,
+    });
+  });
+});
