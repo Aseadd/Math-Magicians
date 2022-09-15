@@ -11,11 +11,9 @@ const Quotes = () => {
       const data = await response.json();
       // const parseData = JSON.parse(data);
       setQuote(data);
-      console.log('data', data);
     };
     fetchQuotes();
   }, []);
-  console.log(quote.quote);
   return (
     <div className="quotes">
       <p className="quote">
