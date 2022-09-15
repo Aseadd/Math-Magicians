@@ -9,13 +9,10 @@ const Quotes = () => {
         'https://random-math-quote-api.herokuapp.com/',
       );
       const data = await response.json();
-      // const parseData = JSON.parse(data);
       setQuote(data);
-      console.log('data', data);
     };
     fetchQuotes();
   }, []);
-  console.log(quote.quote);
   return (
     <div className="quotes">
       <p className="quote">
