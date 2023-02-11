@@ -63,7 +63,7 @@ To get a local copy up and running follow these simple steps.
 
 ## 🌎 Live Demo:
 
-- [math magician]()
+- [math magician](https://sunny-capybara-f76554.netlify.app/)
 
 ## Authors
 
