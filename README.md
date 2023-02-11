@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple steps.
 - [Loom Video]()
 
 ## 🌎 Live Demo:
-- [Capstone2]()
+- [Demo](https://sunny-capybara-f76554.netlify.app/)
 
 ## Authors 
 ### 👤 Addis Tsega
